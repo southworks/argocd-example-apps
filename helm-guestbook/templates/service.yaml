@@ -7,7 +7,6 @@ metadata:
     chart: {{ template "helm-guestbook.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
-    sometag: sometagvalue
 spec:
   type: {{ .Values.service.type }}
   ports:
